@@ -88,7 +88,7 @@ namespace Asthma_Calc
                             else
                             {
                                 MenuAndError.PrintError();
-                            } 
+                            }
                         }
 
                         else if (medicine == 2)
@@ -144,7 +144,7 @@ namespace Asthma_Calc
                         }
                         break;
                     case 4:
-                        Console.WriteLine("Ohjelma loppuu. Mene pois");
+                        Console.WriteLine("Ohjelma loppui. Mene pois");
                         exit = 1;
                         break;
                     default:
