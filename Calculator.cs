@@ -86,7 +86,9 @@ namespace Asthma_Calc
                             }
 
                             else
+                            {
                                 MenuAndError.PrintError();
+                            } 
                         }
 
                         else if (medicine == 2)
