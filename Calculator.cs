@@ -15,7 +15,8 @@ namespace Asthma_Calc
             var strPath = @"Medicine.csv";
 
             CSV.ReadingCSV(totalportion, usedportion, strPath);
-            Console.WriteLine("Lunan astmalääkelaskuri\n");
+            Console.WriteLine("Lunan astmalääkelaskuri");
+            Console.WriteLine("Versio 1.3\n");
 
             /* int unusedvl = totalportion[1] - usedportion[1];
              int unusedfx = totalportion[0] - usedportion[0];
