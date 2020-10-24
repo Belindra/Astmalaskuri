@@ -59,14 +59,13 @@ namespace Asthma_Calc
                         int medicine = Convert.ToInt32(Console.ReadLine());
                         Console.Clear();
 
-                        Console.WriteLine("Kuinka monta annosta otit?\n");
-                        Console.WriteLine("1");
-                        Console.WriteLine("2");
-                        int portion = Convert.ToInt32(Console.ReadLine());
-                        Console.Clear();
-
                         if (medicine == 1)
                         {
+                            Console.WriteLine("Kuinka monta annosta otit?\n");
+                            Console.WriteLine("1");
+                            int portion = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+
                             if (portion == 1)
                             {
                                 usedportion[0] = usedportion[0] + 1;
@@ -77,15 +76,6 @@ namespace Asthma_Calc
 
                             }
 
-                            else if (portion == 2)
-                            {
-                                usedportion[0] = usedportion[0] + 2;
-                                int unused = totalportion[0] - usedportion[0];
-                                Console.ForegroundColor = ConsoleColor.DarkYellow;
-                                Console.WriteLine($"Flixotidea on jäljellä {unused} annosta\n");
-                                Console.ResetColor();
-                            }
-
                             else
                             {
                                 MenuAndError.PrintError();
@@ -94,6 +84,12 @@ namespace Asthma_Calc
 
                         else if (medicine == 2)
                         {
+                            Console.WriteLine("Kuinka monta annosta otit?\n");
+                            Console.WriteLine("1");
+                            Console.WriteLine("2");
+                            int portion = Convert.ToInt32(Console.ReadLine());
+                            Console.Clear();
+
                             if (portion == 1)
                             {
                                 usedportion[1] = usedportion[1] + 1;
@@ -149,7 +145,7 @@ namespace Asthma_Calc
                         exit = 1;
                         break;
                     default:
-                        Console.WriteLine("Väärä valinta, yritä uudelleen");
+                        Console.WriteLine("Väärä valinta, yritä uudelleen\n");
                         break;
                 }
             }
