@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO; 
 
 namespace Asthma_Calc
 {
@@ -13,26 +14,14 @@ namespace Asthma_Calc
         public void Medicine()
         {
             var strPath = @"Medicine.csv";
-
+            DateTime dt = File.GetLastAccessTime(strPath);
+            string datetime = dt.ToShortDateString();
+            Console.WriteLine("Ohjelma aukaistu edellisen kerran {0}.\n", datetime);
+            
             CSV.ReadingCSV(totalportion, usedportion, strPath);
             Console.WriteLine("Lunan astmalääkelaskuri");
-            Console.WriteLine("Versio 1.3\n");
-
-            /* int unusedvl = totalportion[1] - usedportion[1];
-             int unusedfx = totalportion[0] - usedportion[0];
-
-             if (usedportion[0] >= 10)
-             {
-                 Console.ForegroundColor = ConsoleColor.DarkYellow;
-                 Console.WriteLine($"Huom! Flixotidea on jäljellä enää {unusedfx} annosta!");
-             }
-
-             if (usedportion[1] >= 10)
-             {
-                 Console.ForegroundColor = ConsoleColor.DarkCyan;
-                 Console.WriteLine($"Huom! Ventolinea on jäljellä enää {unusedvl} annosta!\n");
-             }
-             Console.ResetColor();*/
+            Console.WriteLine("Versio 1.4\n");
+           
 
             do
             {
