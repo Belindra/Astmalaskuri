@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.IO; 
+using System.IO;
 
 namespace Asthma_Calc
 {
@@ -14,14 +14,12 @@ namespace Asthma_Calc
         public void Medicine()
         {
             var strPath = @"Medicine.csv";
-            DateTime dt = File.GetLastAccessTime(strPath);
-            string datetime = dt.ToShortDateString();
-            Console.WriteLine("Ohjelma aukaistu edellisen kerran {0}.\n", datetime);
-            
+            DateTime dt = File.GetLastWriteTime(strPath);
+           // string datetime = dt.ToShortDateString();
+            Console.WriteLine($"Annoksia kirjattu edellisen kerran {dt}.\n");
+
             CSV.ReadingCSV(totalportion, usedportion, strPath);
-            Console.WriteLine("Lunan astmalääkelaskuri");
-            Console.WriteLine("Versio 1.4\n");
-           
+            Console.WriteLine("Lunan astmalääkelaskuri versio 1.4\n");
 
             do
             {
@@ -52,6 +50,7 @@ namespace Asthma_Calc
                         {
                             Console.WriteLine("Kuinka monta annosta otit?\n");
                             Console.WriteLine("1");
+                            Console.WriteLine("2");
                             int portion = Convert.ToInt32(Console.ReadLine());
                             Console.Clear();
 
@@ -63,6 +62,15 @@ namespace Asthma_Calc
                                 Console.WriteLine($"Flixotidea on jäljellä {unused} annosta\n");
                                 Console.ResetColor();
 
+                            }
+
+                            else if (portion == 2)
+                            {
+                                usedportion[0] = usedportion[0] + 2;
+                                int unused = totalportion[0] - usedportion[0];
+                                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                                Console.WriteLine($"Flixotidea on jäljellä {unused} annosta\n");
+                                Console.ResetColor();
                             }
 
                             else
