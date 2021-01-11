@@ -1,4 +1,3 @@
-Lunan astmal‰‰kelaskuri. Idea ohjelmaan l‰hti liikkeelle astmaan sairastuneesta kissastani, joka k‰ytt‰‰ kahta eri l‰‰kett‰ sairauden hoitoon.
-Molemmat l‰‰kkeet ovat inhaloitavia, joten purkista ei n‰e p‰‰llep‰in, montako annosta purkissa on j‰ljell‰. J‰ljell‰ olevien annosten laskemista
-vaikeuttaa myˆs se, ett‰ molempia l‰‰kkeit‰ on eri purkeissa eri annosm‰‰r‰. Ohjelmassa k‰ytt‰j‰ pystyy syˆtt‰m‰‰n jomman kumman tai molempien l‰‰kkeiden k‰yttˆm‰‰r‰n sek‰
-n‰kem‰‰n, paljonko annoksia on viel‰ j‰ljell‰ kummassakin l‰‰kkeess‰. Ohjelma toimii suomenkielell‰.
+Lunan astmal√§√§kelaskuri. Idea ohjelmaan l√§hti liikkeelle astmaan sairastuneesta kissastani, joka k√§ytt√§√§ kahta eri l√§√§kett√§ sairauden hoitoon.
+Molemmat l√§√§kkeet ovat inhaloitavia, joten purkista ei n√§e p√§√§llep√§in, montako annosta purkissa on j√§ljell√§. J√§ljell√§ olevien annosten laskemista
+vaikeuttaa my√∂s se, ett√§ molempia l√§√§kkeit√§ on eri purkeissa eri annosm√§√§r√§. Ohjelmassa k√§ytt√§j√§ pystyy sy√∂tt√§m√§√§n jomman kumman tai molempien l√§√§kkeiden k√§ytt√∂m√§√§r√§n, nollaamaan l√§√§kepurkin annosm√§√§r√§n sek√§ n√§kem√§√§n, paljonko annoksia on viel√§ j√§ljell√§ kummassakin l√§√§kkeess√§. Ohjelma ilmoittaa, millon viimeksi annoksia on kirjattu ja toimii suomenkielell√§.
